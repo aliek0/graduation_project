@@ -1,0 +1,14 @@
+Overall Test Accuracy: 93.60%
+
+Classification Report:
+              precision    recall  f1-score   support
+
+      boxing     0.9459    0.9790    0.9622       143
+handclapping     0.9026    0.9653    0.9329       144
+  handwaving     0.9924    0.9097    0.9493       144
+     running     0.9241    0.9306    0.9273       144
+     walking     0.9214    0.8958    0.9085       144
+
+    accuracy                         0.9360       719
+   macro avg     0.9373    0.9361    0.9360       719
+weighted avg     0.9373    0.9360    0.9360       719
