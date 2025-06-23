@@ -1,10 +1,13 @@
 #Skeleton-Based Action Recognition using ST-GCN#
+
 This repository contains the source code for a graduation project on real-time human action recognition. The system uses skeleton data extracted from standard 2D videos and classifies actions using a Spatio-Temporal Graph Convolutional Network (ST-GCN).
 
 #Abstract#
+
 This project presents a robust system for human action recognition that operates on real-time video streams from a standard webcam. By leveraging a skeleton-based approach, the system models the spatio-temporal dynamics of human movement, making it inherently invariant to superficial visual details like clothing, background, and lighting conditions. We utilize the YOLOv8-Pose model for efficient skeleton extraction and a lightweight ST-GCN model for classification. The model was trained on a 5-class subset of the KTH Human Actions dataset and achieved an overall test accuracy of 93.6%.
 
 #Features#
+
 Real-Time Performance: Classifies actions in real-time from a standard webcam feed.
 High Accuracy: Achieves 93.6% accuracy on the unseen test set.
 Robustness: Focuses on skeletal movement, making it insensitive to changes in background, lighting, or apparel.
@@ -16,10 +19,12 @@ Running
 Walking 
 
 #Dataset#
+
 This project utilizes the KTH Human Actions Dataset. The dataset contains videos of 25 subjects performing six different actions in various scenarios. For this project, 5 of the 6 action classes were used.
 Note: Due to its large size, the dataset is not included in this repository. You need to download it from the official website and process it using the generate_dataset.py script included in this project.
 
 #Installation#
+
 1.Clone the repository:
 
 Bash:
@@ -37,6 +42,7 @@ Download the trained model weights (kth_best_model_5_class.pth) from the link be
 https://drive.google.com/drive/folders/12ZEUeiXZXcVXIpJhlBW4QeikuXk9D17-?usp=drive_link
 
 #USAGE#
+
 The project includes scripts for data preparation, training, evaluation, and a live demonstration.
 
 1. Data Preparation:
@@ -69,6 +75,7 @@ python src/live_demo.py
 
 
 #Results#
+
 The model achieved high performance on the test set, which was completely held out from the training and validation processes.
 
 Overall Test Accuracy: 93.60% 
