@@ -9,13 +9,21 @@ This project presents a robust system for human action recognition that operates
 #Features#
 
 Real-Time Performance: Classifies actions in real-time from a standard webcam feed.
+
 High Accuracy: Achieves 93.6% accuracy on the unseen test set.
+
 Robustness: Focuses on skeletal movement, making it insensitive to changes in background, lighting, or apparel.
+
 5 Action Classes: Successfully recognizes the following actions:
+
 Boxing 
+
 Hand Clapping 
+
 Hand Waving 
+
 Running 
+
 Walking 
 
 #Dataset#
@@ -28,15 +36,18 @@ Note: Due to its large size, the dataset is not included in this repository. You
 1.Clone the repository:
 
 Bash:
+
 git clone https://github.com/KULLANICI_ADINIZ/PROJE_ADINIZ.git
 cd PROJE_ADINIZ
 
 2. Install dependencies:
  
 Bash:
+
 pip install -r requirements.txt
 
 4. Download Pre-Tranied Model:
+
 Download the trained model weights (kth_best_model_5_class.pth) from the link below and place the file inside a trained_models/ directory in the project's root folder.
 
 https://drive.google.com/drive/folders/12ZEUeiXZXcVXIpJhlBW4QeikuXk9D17-?usp=drive_link
@@ -46,31 +57,39 @@ https://drive.google.com/drive/folders/12ZEUeiXZXcVXIpJhlBW4QeikuXk9D17-?usp=dri
 The project includes scripts for data preparation, training, evaluation, and a live demonstration.
 
 1. Data Preparation:
+   
 To process the raw KTH dataset videos into skeleton data in .npy format, run:
 
-Bash
+Bash:
+
 python src/generate_dataset.py
 
 2. Training:
+
 To train the model from scratch on the prepared dataset, run:
 
-Bash
+Bash:
+
 python src/train.py
 
 The script will train the model for 50 epochs and save the best performing model based on validation accuracy as kth_best_model_5_class.pth.
 
 3. Evaluation:
+   
 To evaluate the performance of the trained model on the test set, run:
 
 Bash
+
 python src/test.py
 
 This will print a classification report and save a confusion matrix image.
 
 4. Live Demo
+   
 To run the live action recognition demo using your webcam, make sure the pre-trained model is in the correct directory and run:
 
-Bash
+Bash:
+
 python src/live_demo.py
 
 
@@ -81,6 +100,7 @@ The model achieved high performance on the test set, which was completely held o
 Overall Test Accuracy: 93.60% 
 
 Classification Report:
+
 Class              	Precision	Recall	F1-Score
 boxing              	0.9459	0.9790	0.9622
 handclapping         	0.9026	0.9653	0.9329
