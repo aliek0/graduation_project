@@ -27,11 +27,11 @@ git clone https://github.com/KULLANICI_ADINIZ/PROJE_ADINIZ.git
 cd PROJE_ADINIZ
 
 2. Install dependencies:
-3. 
+ 
 Bash:
 pip install -r requirements.txt
 
-3. Download Pre-Tranied Model:
+4. Download Pre-Tranied Model:
 Download the trained model weights (kth_best_model_5_class.pth) from the link below and place the file inside a trained_models/ directory in the project's root folder.
 
 https://drive.google.com/drive/folders/12ZEUeiXZXcVXIpJhlBW4QeikuXk9D17-?usp=drive_link
