@@ -105,17 +105,17 @@ Overall Test Accuracy: 93.60%
 
 Classification Report:
 
-Class              	Precision	Recall	F1-Score
+Class                    	Precision	Recall	F1-Score
 
-boxing              	0.9459	0.9790	0.9622
+boxing               	     0.9459	0.9790	0.9622
 
-handclapping         0.9026	0.9653	0.9329
+handclapping               0.9026	0.9653	0.9329
 
-handwaving          	0.9924	0.9097	0.9493
+handwaving          	      0.9924	0.9097	0.9493
+ 
+running	                   0.9241	0.9306	0.9273
 
-running	             0.9241	0.9306	0.9273
-
-walking	             0.9214	0.8958	0.9085
+walking	                   0.9214	0.8958	0.9085
 
 
 #Model Architecture#
